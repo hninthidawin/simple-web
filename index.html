@@ -212,19 +212,14 @@ body, html {
 }
 </style>
 
-<script>
-  var x = location.hostname;
-  alert(x);
-  document.getElementById("demo").innerHTML= x;
-</script>
-
 </head>
 <body>
   <img src="https://1000logos.net/wp-content/uploads/2017/12/Fujitsu-Logo.png" height="12%" width="10%">
   
  <section class='container'>
-  <iframe width=200 height=80 frameborder=0 src=http://checkip.dyndns.org/></iframe>
-  <p id="demo"> </p>
+  <!-- <iframe width=200 height=80 frameborder=0 src=http://checkip.dyndns.org/></iframe> -->
+  <p>IP: <span id="ip"></span></p><script>var x = location.host;
+document.getElementById("ip").innerHTML=x;</script>
   <hgroup>
     <h1>Welcome to Fujitsu OpenShift Demo</h1>
   </hgroup>
